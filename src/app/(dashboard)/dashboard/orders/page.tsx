@@ -275,7 +275,7 @@ import {
                       orders.map((order) => (
   
                 <TableRow>
-                  <TableCell className="font-medium">
+                  <TableCell className="font-medium" key={order.name}>
                       <p>Name</p>
                       <p className="hidden md:flex text-sm text-muted-foreground">email</p>
                   </TableCell>
@@ -294,3 +294,5 @@ import {
       </Card>
     );
   }
+
+

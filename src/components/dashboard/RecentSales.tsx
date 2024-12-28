@@ -186,7 +186,7 @@ export function RecentSales() {
     <ScrollArea className="h-[450px]">
     <div className="space-y-6 ">
       {recentSales.map((sale) => (
-        <div className="flex items-center">
+        <div key={sale.name} className="flex items-center">
           <Avatar className="h-16 w-16">
             <img
               src={sale.avatar}

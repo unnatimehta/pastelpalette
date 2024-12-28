@@ -58,7 +58,7 @@ function Dashboard() {
         </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <Card className="p-6">
+            <Card className="p-6" key={stat.title}>
               <div className="flex items-center justify-between space-x-4">
                 <div className="flex items-center space-x-4">
                   <div className="p-2 bg-primary/10 rounded-full">
